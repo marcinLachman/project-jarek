@@ -24,9 +24,9 @@
           </div>
     
           <div class="nav-links">
-            <a href="#driver">zostań kierowcą</a>
-            <a href="#join">Jak zacząć?</a>
-            <a href="#contact">Kontakt</a>
+            <a href="#driver" aria-label="link nawigacji">zostań kierowcą</a>
+            <a href="#join" aria-label="link nawigacji">Jak zacząć?</a>
+            <a href="#contact" aria-label="link nawigacji">Kontakt</a>
           </div>
     
           <div class="nav-btn">
@@ -61,8 +61,8 @@
                 <h1>Zadzwoń lub napisz</h1>
               </div>
               <div class="landing-right-button">
-                <div><a href="index.html"><button>Napisz do nas!!</button></a></div>
-                <div><a href="tel:+48501366033"><button>Zadzwoń !!</button></a></div>
+                <div><a href="index.html" aria-label="przycisk do formularza"><button>Napisz do nas!!</button></a></div>
+                <div><a href="tel:+48501366033" aria-label="przycisk z numerem telefonu"><button>Zadzwoń !!</button></a></div>
               </div>
               <div class="landing-right-img"></div>
             </div>
@@ -111,14 +111,14 @@
             </div>
             
             <div class="driver-button">
-              <div><a href="index.html"><button>Napisz do nas!!</button></a></div>
-              <div><a href="tel:+48501366033"><button>Zadzwoń !!</button></a></div>
+              <div><a href="index.html" aria-label="przycisk do formularza kontakt"><button>Napisz do nas!!</button></a></div>
+              <div><a href="tel:+48501366033" aria-label="przycisk z numerem telefonu"><button>Zadzwoń !!</button></a></div>
             </div>
           </div>
         </div>
 
       </section>
-
+ 
       <div class="horizontal-line"></div>
 
       <section id="join">
@@ -142,14 +142,48 @@
             <h1>ZACZNIJ ZARABIAĆ!</h1>
 
             <div class="join-button">
-              <div><a href="index.html"><button>Napisz do nas!!</button></a></div>
-              <div><a href="index.html"><button>Napisz do nas!!</button></a></div>
-              <div><a href="tel:+48501366033"><button>Zadzwoń !!</button></a></div>
+              <div><a href="index.html" aria-label="przycisk do formularza kontakt"><button>Napisz do nas!!</button></a></div>
+              <div><a href="index.html" aria-label="przycisk do formularza"><button>Napisz do nas!!</button></a></div>
+              <div><a href="tel:+48501366033" aria-label="przycisk z numerem telefonu"><button>Zadzwoń !!</button></a></div>
             </div>
 
           </div>
         </dive>
       </section>
     </main>
+
+    <footer>
+      <section id="contact">
+        <div class="contact">
+          <div class="container">
+            <div class="contact-left">
+              <div class="contact-left-text">
+                <h1>Kontakt</h1>
+                <p><a href="tel:+48501366033" aria-label="numer telefonu">Telefon: +48 501 366 033</a></p>
+                <p><a href="mailto: nazwa@nazw.pl" aria-label="adres email">Email: nazwa@nazw.p</a></p>
+
+                <h1>Biuro w Krakowie</h1>
+                <p>City Go</p>
+                <p>il. nazwa ulicy 00/00</p>
+                <p>00-000 Kraków</p>
+              </div>
+            </div>
+            <div class="contact-right">
+              <div class="conatct-right-form">
+                <h1>Wypełnij formularz</h1>
+
+                  <form>
+                    <input type="text" placeholder="Imię..." id="fname" name="fname"><br>
+                    <input type="text" placeholder="Email/Telefon..." id="fname" name="fname"><br>
+                    <textarea placeholder="Wiadomość..." id="fname" name="fname" rows="6" cols="40"></textarea><br>
+                    <a href="mailto: nazwa@nazw.pl" aria-label="przycisk wyślij formularz"><button type="submit">Wyślij</button></a>
+                  </form>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
   </body>
 </html>

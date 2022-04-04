@@ -1,9 +1,19 @@
 @import "./reset.css";
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
 
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Source Sans Pro', sans-serif;
   background-color: #eae9e4;
+}
+
+::placeholder {
+  color: black;
+  font-weight: 600;
+  font-size: 16px;
 }
 
 h1 {
@@ -38,7 +48,7 @@ p {
 /* ------------------------------------------------------------ */
 
 .navigation .container{
-  height: 12vh;
+  height: 12%;
   display: grid;
   grid-template-columns: 50% 35% 15%;
   column-gap: 3%;
@@ -75,9 +85,13 @@ p {
   justify-content: space-between;
 }
 
-.nav-btn button, .landing-right-button button, .driver-button button, .join-button button {
+.nav-btn button,
+.landing-right-button button,
+.driver-button button,
+.join-button button,
+.conatct-right-form button {
   width: 150%;
-  padding: 15px;
+  padding: 12%;
   border: none;
   border-radius: 5px;
   background-color: #8ecaab;
@@ -88,17 +102,20 @@ p {
   transition: transform 1s;
 }
 
-.nav-btn button:hover, .landing-right-button button:hover, .driver-button button:hover, .join-button button:hover {
+.nav-btn button:hover,
+.landing-right-button button:hover, 
+.driver-button button:hover, 
+.join-button button:hover, 
+.conatct-right-form button:hover {
   transform: scale(1.1);
 }
 
 /* ------------------------------------------------------------ */
 
 .landing .container  {
-  height: 70vh;
+  height: 70%;
   display: flex;
-  margin-top: 50px;
-  border-radius: 5px;
+  margin-top: 3%;
 }
 
 /* ------------------------------------------------------------ */
@@ -113,7 +130,6 @@ p {
 
 
 .landing-left-text, .landing-right-text {
-  display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin-top: 10%;
@@ -125,7 +141,7 @@ p {
 }
 
 .landing-left-text h2 {
-  padding-top: 15%;
+  padding-top: 5%;
   width: 60%;
   font-size: 24px;
   line-height: 150%;
@@ -133,7 +149,7 @@ p {
 
 .landing-left-text p {
   width: 70%;
-  padding-top: 20px;
+  padding-top: 10%;
   font-size: 18px;
   line-height: 100%;
 }
@@ -144,26 +160,15 @@ p {
 
 .landing-left-text li {
   margin: 0;
-  padding: 26px 0 20px 84px;
+  padding: 7% 0 7% 20%;
   list-style: none;
-	background-image: url("../img/icon/logo4.svg");
+	background-image: url("../img/icon/driver-arrow.svg");
 	background-repeat: no-repeat;
 	background-position: left center;
-	background-size: 80px;
+	background-size: 45px;
 }
 
 /* ------------------------------------------------------------ */
-
-.landing-right {
-  float: right;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  border-left: 5px solid #8ecaab;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-}
-
 
 .landing-right {
   float: right;
@@ -191,18 +196,16 @@ p {
   margin: 35px auto 0 10%;
   width: 100%;
   height: 100%;
-  background-image: url('../img/bg/bg1.png');
+  background-image: url('../img/icon/logo3.svg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  border: 2px solid #8ecaab;
-  border-radius: 10%;
 }
 
 /* ------------------------------------------------------------ */
 
 .landing-bottom .container {
-  height: 14vh;
+  height: 16vh;
   display: grid;
   grid-template-columns: 30% 40% 30%;
   column-gap: 3%;
@@ -218,7 +221,7 @@ p {
 
 .driver {
   height: 100vh;
-  margin-top: 60px;
+  margin-top: 6%;
 }
 
 .driver h1, .driver-text h1, .join h1 {
@@ -239,7 +242,7 @@ p {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-gap: 50px;
-  margin-top: 120px;
+  margin-top: 8%;
 }
 
 .driver-boxes img {
@@ -250,15 +253,14 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px 90px 0 100px;
 }
 
 .driver-text h1 {
-  margin-top: 70px;
+  margin-top: 8%;
 }
 
 .driver-button {
-  margin: 80px auto 0 auto;
+  margin: 8% auto 0 auto;
   width: 40%;
   display: flex;
   align-items: center;
@@ -269,11 +271,11 @@ p {
 
 .join {
   height: 100vh;
-  margin-top: 60px;
+  margin-top: 6%;
 }
 
 .join-text {
-  margin-top: 60px;
+  margin-top: 8%;
   font-size: 18px;
   line-height: 150%;
 }
@@ -290,11 +292,12 @@ p {
 
 .join-text li {
   margin: 10px;
-  padding: 11px 0 12px 80px;
+  padding: 0 0 0 7%;
   list-style: none;
 	background-image: url("../img/icon/driver-arrow.svg");
 	background-repeat: no-repeat;
 	background-position: left center;
+  line-height: 300%;
 	background-size: 40px;
 }
 
@@ -304,4 +307,98 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+/* ------------------------------------------------------------ */
+
+.contact {
+  background-color: black;
+  color: white;
+}
+
+.contact .container  {
+  height: 60vh;
+  display: flex;
+}
+
+.contact-left {
+  margin-top: 3%;
+  margin-bottom: 3%;
+  float: left;
+  width: 50%;
+  border-right: 5px solid #8ecaab;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.contact-left-text {
+  flex-direction: column;
+  margin-top: 10%;
+  line-height: 150%;
+}
+
+.contact-left-text h1, .conatct-right-form h1 {
+  font-size: 42px;
+  line-height: 200%;
+}
+
+.contact-left-text a {
+  margin-left: 2%;
+  font-size: 18px;
+  text-decoration: none;
+  line-height: 180%;
+  color: white;
+}
+
+.contact-left-text p {
+  margin-left: 2%;
+  font-size: 18px;
+  line-height: 180%;
+  color: white;
+}
+
+.contact-right {
+  margin-top: 3%;
+  margin-bottom: 3%;
+  float: right;
+  width: 50%;
+  border-left: 5px solid #8ecaab;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.conatct-right-form  {
+  margin-top: 3%;
+  line-height: 150%;
+  margin-left: 20%;
+}
+
+.conatct-right-form form {
+  padding: 2%;
+  background-color: #5a2f27;
+  border-top: 10px solid #eda911;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom: 10px solid #eda911;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+} 
+
+.conatct-right-form input, .conatct-right-form textarea {
+  width: 300px;
+  margin-top: 5%;
+  padding: 3%;
+  border: none;
+  border-bottom: 1px solid black;
+  background-color: #5a2f27;
+} 
+
+.conatct-right-form input:focus,
+.conatct-right-form textarea:focus {
+  outline: none;
+}
+.conatct-right-form button {
+  margin: 5% auto 5% 25%;
+  width: 40%;
+  padding: 5%;
 }
