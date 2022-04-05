@@ -181,7 +181,7 @@
 }
 
 .conatct-right-form input, .conatct-right-form textarea {
-  width: 200px;
+  width: 100%;
 } 
 
 /* ----------------------------------- */
