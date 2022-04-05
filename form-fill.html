@@ -9,6 +9,9 @@
     <meta keywords="test, testowa, nauka, html">
 
     <link href="./style/style.css" rel="stylesheet">
+    <link href="./style/tablet.css" media="(min-width: 720px)" rel="stylesheet">
+    <link href="./style/laptop.css" media="(min-width: 1024px)" rel="stylesheet">
+    <link href="./style/desktop.css" media="(min-width: 1440px)" rel="stylesheet">
 
     <title>City Go</title>
   </head>
@@ -17,14 +20,14 @@
       <div class="navigation">
         <div class="container">
         
-          <div>
-          <a class="nav-logo" href="./#" aria-label="go to the top">
+          <div class="nav-logo">
+          <a href="./#" aria-label="go to the top">
             <img src="./img/icon/logo5.svg"  alt="logo City Go"  />
           </a>
           </div>
-    
+
           <div class="nav-links">
-            <a href="./#oferta" aria-label="link nawigacji">zostań kierowcą</a>
+            <a href="./#driver" aria-label="link nawigacji">zostań kierowcą</a>
             <a href="./#join" aria-label="link nawigacji">Jak zacząć?</a>
             <a href="./#contact" aria-label="link nawigacji">Kontakt</a>
           </div>
@@ -94,14 +97,14 @@
               <div class="conatct-right-form">
                 <h1>Wypełnij formularz</h1>
 
-                <form action="mailto:dawid303@gmail.com" method="post" enctype="text/plain">
-                  <input type="text" placeholder="Imię..." id="name" name="imie "><br>
-                  <input type="email" placeholder="Email/Telefon..." id="email" name="Email"><br>
-                  <textarea placeholder="Wiadomość..." id="text" name="Wiadomosc " rows="6" cols="40"></textarea><br>
-                  <a href="mailto: nazwa@nazw.pl" aria-label="przycisk wyślij formularz">
-                    <button type="submit" value="Submit">Wyślij</button>
-                  </a>
-                </form>
+                  <form action="mailto:dawid303@gmail.com" method="post" enctype="text/plain">
+                    <input type="text" placeholder="Imię..." id="name" name="imie "><br>
+                    <input type="email" placeholder="Email/Telefon..." id="email " name="Email"><br>
+                    <textarea placeholder="Wiadomość..." id="text" name="Wiadomosc " rows="6" cols="40"></textarea><br>
+                    <a href="mailto: nazwa@nazw.pl" aria-label="przycisk wyślij formularz">
+                      <button type="submit" value="Submit">Wyślij</button>
+                    </a>
+                  </form>
 
               </div>
             </div>

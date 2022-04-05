@@ -1,0 +1,13 @@
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.join-butoonimg-box {
+  height: 600px;
+  width: 600px;
+}
+
+.fill-page-form label {
+  line-height: 300%;
+}
