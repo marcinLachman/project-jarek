@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta description="Strona testowa ">
+    <meta author="Marcin Lachman">
+    <meta keywords="test, testowa, nauka, html">
+
+    <link href="./style/style.css" rel="stylesheet">
+
+    <title>City Go</title>
+  </head>
+  <body>
+    <nav>
+      <div class="navigation">
+        <div class="container">
+        
+          <div>
+          <a class="nav-logo" href="./#" aria-label="go to the top">
+            <img src="./img/icon/logo5.svg"  alt="logo City Go"  />
+          </a>
+          </div>
+    
+          <div class="nav-links">
+            <a href="./#oferta" aria-label="link nawigacji">zostań kierowcą</a>
+            <a href="./#join" aria-label="link nawigacji">Jak zacząć?</a>
+            <a href="./#contact" aria-label="link nawigacji">Kontakt</a>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+
+    <div class="horizontal-line"></div>
+
+    <main>
+      <section>
+        <div class="fill-page">
+          <div class="container">
+            <div class="fill-page-text">
+              <h1>Wypełnij formularz</h1>
+              <h2>Wypełnienie formularza do niczego Cię nie zobowiązuje. Pozwoli nam jednak na skontaktowanie się z Tobą i przedstawienie szczegółowej oferty.</h2>
+            </div>
+            <div class="fill-page-form">
+              <form action="mailto:dawid303@gmail.com" method="post" enctype="text/plain">
+
+                <label for="name">Imię:</label>
+                <input type="text" id="name" name="Imie ">
+
+                <label for="birth date">Data urodzenia:</label>
+                <input type="date" id="date" name="Data urodzenia ">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="Email ">
+
+                <label for="phone">telefon:</label>
+                <input type="number" id="phone" name="Numer telefonu ">
+
+                <label for="study">Czy jesteś tudentem:</label>
+                <input type="text" id="study" name="Czy jesteś studentem ">
+
+                <label for="hours">W jakich godzinach dziś lub jutro możemy się z Tobą skontaktować?</label>
+                <input type="time" id="houers" name="Kiedy jestes dostepny ">
+
+                <a href="mailto: nazwa@nazw.pl" aria-label="przycisk wyślij formularz">
+                  <button type="submit" value="Submit">Wyślij</button>
+                </a>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <section id="contact">
+        <div class="contact">
+          <div class="container">
+            <div class="contact-left">
+              <div class="contact-left-text">
+                <h1>Kontakt</h1>
+                <p><a href="tel:+48501366033" aria-label="numer telefonu">Telefon: +48 501 366 033</a></p>
+                <p><a href="mailto: nazwa@nazw.pl" aria-label="adres email">Email: nazwa@nazw.p</a></p>
+
+                <h1>Biuro w Krakowie</h1>
+                <p>City Go</p>
+                <p>il. nazwa ulicy 00/00</p>
+                <p>00-000 Kraków</p>
+              </div>
+            </div>
+            <div class="contact-right">
+              <div class="conatct-right-form">
+                <h1>Wypełnij formularz</h1>
+
+                <form action="mailto:dawid303@gmail.com" method="post" enctype="text/plain">
+                  <input type="text" placeholder="Imię..." id="name" name="imie "><br>
+                  <input type="email" placeholder="Email/Telefon..." id="email" name="Email"><br>
+                  <textarea placeholder="Wiadomość..." id="text" name="Wiadomosc " rows="6" cols="40"></textarea><br>
+                  <a href="mailto: nazwa@nazw.pl" aria-label="przycisk wyślij formularz">
+                    <button type="submit" value="Submit">Wyślij</button>
+                  </a>
+                </form>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>

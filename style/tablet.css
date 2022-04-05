@@ -1,0 +1,162 @@
+.container {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.horizontal-line {
+  width:98%; 
+  margin: 0 auto;
+  height: 2px; 
+  background: #8ecaab;
+}
+
+.navigation .container {
+  height: 12%;
+  /* position: relative; */
+  display: grid;
+  grid-template-columns: 50% 35% 15%;
+  column-gap: 3%;
+}
+
+.nav-links {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-links a {
+  margin-left: 2%;
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
+  transition-duration: .5s;
+  text-transform: uppercase;
+}
+
+.nav-links a:hover {
+  transform: translateY(-10px);
+}
+
+.nav-btn {
+  right: 0;
+  left: 20%;
+  top: 28%;
+}
+
+.navigation .container .nav-btn {
+  position: relative;
+}
+
+/* --------------------------------------- */
+
+.landing .container  {
+  height: 70%;
+  display: flex;
+  flex-direction: unset;
+  margin-top: 3%;
+}
+
+.landing-left {
+  float: left;
+  width: 100%;
+  border-right: 5px solid #8ecaab;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.landing-left-text {
+  margin: 0 auto;
+  padding-top: 5%;
+  width: 60%;
+  font-size: 24px;
+  line-height: 150%;
+}
+
+/* --------------------------------------- */
+
+.landing-right {
+  height: unset;
+  float: right;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-left: 5px solid #8ecaab;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.landing-right-img {
+  margin-left: 13%;
+  height: 100%;
+}
+
+.landing-right-button {
+  flex-direction: none;
+}
+
+.landing-right-button-phone {
+  display:none;
+}
+
+.landing-bottom .container {
+  grid-template-columns: 30% 40% 30%;
+  column-gap: 3%;
+}
+
+/* --------------------------------------- */
+
+.driver-boxes {
+  height: 50vh;
+  grid-template-columns: 50% 50%;
+}
+
+.driver-button {
+  flex-direction: unset;
+  justify-content: space-between;
+  gap: 0;
+}
+
+/* --------------------------------------- */
+
+.join-text li {
+  padding: 0 0 0 7%;
+  line-height: 300%;
+}
+
+/* --------------------------------------- */
+
+.contact .container  {
+  height: 65vh;
+  flex-direction: unset;
+}
+
+.contact-left {
+  height: 96%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  float: left;
+  width: 50%;
+  border-right: 5px solid #8ecaab;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.contact-right {
+  height: 96%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  float: right;
+  width: 50%;
+  border-left: 5px solid #8ecaab;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.contact-left-text h1, .conatct-right-form h1, .fill-page-text h1 {
+  font-size: 42px;
+}
+
+.conatct-right-form input, .conatct-right-form textarea {
+  width: 400px;
+} 

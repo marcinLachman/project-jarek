@@ -9,6 +9,9 @@
     <meta keywords="test, testowa, nauka, html">
 
     <link href="./style/style.css" rel="stylesheet">
+    <link href="./style/tablet.css" media="(min-width: 720px)" rel="stylesheet">
+    <link href="./style/laptop.css" media="(min-width: 1024px)" rel="stylesheet">
+    <link href="./style/desktop.css" media="(min-width: 1440px)" rel="stylesheet">
 
     <title>City Go</title>
   </head>
@@ -22,15 +25,15 @@
             <img src="./img/icon/logo5.svg"  alt="logo City Go"  />
           </a>
           </div>
-    
+
           <div class="nav-links">
             <a href="#driver" aria-label="link nawigacji">zostań kierowcą</a>
             <a href="#join" aria-label="link nawigacji">Jak zacząć?</a>
             <a href="#contact" aria-label="link nawigacji">Kontakt</a>
           </div>
-    
+
           <div class="nav-btn">
-            <button>Dołącz do nas</button>
+            <a href="form-fill.html" aria-label="przejście do formularza"><button>Dołącz do nas</button></a>
           </div>
   
         </div>
@@ -46,7 +49,7 @@
           <div class="container">
             <div class="landing-left">
               <div class="landing-left-text">
-                <h2>PRACUJ I ZARABIAJ NA WŁASNYCH ZASADACH! MY ZADBAMY O RESZTĘ.</h2>
+                <h1>PRACUJ I ZARABIAJ NA WŁASNYCH ZASADACH! MY ZADBAMY O RESZTĘ.</h1>
                 <p>Jesteśmy rzetelnym partnerem flotowym Uber, Bolt i Free Now.</p>
                 <ul>
                   <li>działamy na licencji taxi</li>
@@ -61,8 +64,8 @@
                 <h1>Zadzwoń lub napisz</h1>
               </div>
               <div class="landing-right-button">
-                <div><a href="index.html" aria-label="przycisk do formularza"><button>Napisz do nas!!</button></a></div>
-                <div><a href="tel:+48501366033" aria-label="przycisk z numerem telefonu"><button>Zadzwoń !!</button></a></div>
+                <div><a href="#contact" aria-label="przycisk do formularza"><button>Napisz !!</button></a></div>
+                <div class="landing-right-button-phone"><a href="tel:+48501366033" aria-label="przycisk z numerem telefonu"><button>Zadzwoń !!</button></a></div>
               </div>
               <div class="landing-right-img"></div>
             </div>
@@ -111,7 +114,7 @@
             </div>
             
             <div class="driver-button">
-              <div><a href="index.html" aria-label="przycisk do formularza kontakt"><button>Napisz do nas!!</button></a></div>
+              <div><a href="#contact" aria-label="przycisk do formularza kontakt"><button>Napisz !!</button></a></div>
               <div><a href="tel:+48501366033" aria-label="przycisk z numerem telefonu"><button>Zadzwoń !!</button></a></div>
             </div>
           </div>
@@ -142,9 +145,7 @@
             <h1>ZACZNIJ ZARABIAĆ!</h1>
 
             <div class="join-button">
-              <div><a href="index.html" aria-label="przycisk do formularza kontakt"><button>Napisz do nas!!</button></a></div>
-              <div><a href="index.html" aria-label="przycisk do formularza"><button>Napisz do nas!!</button></a></div>
-              <div><a href="tel:+48501366033" aria-label="przycisk z numerem telefonu"><button>Zadzwoń !!</button></a></div>
+              <div><a href="form-fill.html" aria-label="przycisk do formularza"><button>ZACZYNAMY</button></a></div>
             </div>
 
           </div>
@@ -172,11 +173,13 @@
               <div class="conatct-right-form">
                 <h1>Wypełnij formularz</h1>
 
-                  <form>
-                    <input type="text" placeholder="Imię..." id="fname" name="fname"><br>
-                    <input type="text" placeholder="Email/Telefon..." id="fname" name="fname"><br>
-                    <textarea placeholder="Wiadomość..." id="fname" name="fname" rows="6" cols="40"></textarea><br>
-                    <a href="mailto: nazwa@nazw.pl" aria-label="przycisk wyślij formularz"><button type="submit">Wyślij</button></a>
+                  <form action="mailto:dawid303@gmail.com" method="post" enctype="text/plain">
+                    <input type="text" placeholder="Imię..." id="name" name="imie "><br>
+                    <input type="email" placeholder="Email/Telefon..." id="email " name="Email"><br>
+                    <textarea placeholder="Wiadomość..." id="text" name="Wiadomosc " rows="6" cols="40"></textarea><br>
+                    <a href="mailto: nazwa@nazw.pl" aria-label="przycisk wyślij formularz">
+                      <button type="submit" value="Submit">Wyślij</button>
+                    </a>
                   </form>
 
               </div>
