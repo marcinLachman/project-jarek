@@ -1,6 +1,5 @@
 .container {
-  width: 720px;
-  margin: 0 auto;
+  width: 700px;
 }
 
 .horizontal-line {
@@ -39,7 +38,7 @@
 
 .nav-btn {
   right: 0;
-  left: 20%;
+  left: 0;
   top: 28%;
 }
 
@@ -123,6 +122,10 @@
   gap: 0;
 }
 
+.driver-text {
+  padding-top: 42px;
+}
+
 .driver-button button {
   width: 170px;
 }
@@ -145,7 +148,7 @@
 }
 
 .join-button h1 {
-  margin-left: 5%;
+  /* margin-left: 5%; */
 }
 
 /* --------------------------------------- */

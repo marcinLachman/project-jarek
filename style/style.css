@@ -66,7 +66,7 @@ p {
 
 .nav-btn {
   position: absolute;
-  right: 8%;
+  right: 0;
   top: 3%;
   padding: 0;
 }
@@ -78,7 +78,6 @@ p {
 .nav-btn button,
 .landing-right-button button,
 .driver-button button,
-.join-button button,
 .conatct-right-form button {
   width: 200%;
   padding: 25%;
@@ -126,7 +125,6 @@ p {
 }
 
 .landing-left-text p {
-  width: 80%;
   padding-top: 10%;
   font-size: 18px;
   line-height: 100%;
@@ -238,6 +236,10 @@ p {
   align-items: center;
 }
 
+.driver-text {
+  padding-top: 82px;
+}
+
 .driver-text h1 {
   height: 20vh;
   margin-top: 8%;
@@ -266,6 +268,7 @@ p {
   margin-top: 8%;
   font-size: 18px;
   line-height: 150%;
+  margin: 0 auto;
 }
 
 
@@ -307,20 +310,28 @@ p {
 .join-button {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
 }
 
 .join-button h1 {
-  margin-left: 15%;
   line-height: 126%;
 }
 
 .join-button button {
-  width: 162%;
   margin-bottom: 50%;
 }
 
+.join-button button {
+  width: 200px;
+  padding: 15%;
+  border: none;
+  background-color: #9c69e2;
+  box-shadow: 0px 7px 7px rgba(75, 93, 104, 0.3);
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 1s;
+}
 /* ------------------------------------------------------------ */
 
 .contact {
